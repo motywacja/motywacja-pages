@@ -1,4 +1,5 @@
 import json
+import sys
 
 from staticjinja import Site
 
@@ -12,4 +13,4 @@ if __name__ == "__main__":
     site = Site.make_site(contexts=[
         ('index.html', context),
     ])
-    site.render(use_reloader=True)
+    site.render(use_reloader=int(sys.argv[1]) == 1 if len(sys.argv) > 1 else False)

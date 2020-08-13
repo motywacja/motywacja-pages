@@ -2,6 +2,24 @@
 
 {% block body %}
 
+<div class="mainbar">
     {% include '_news.html' %}
+</div>
+
+<div class="sidebar">
+    <div class="searchform">
+    </div>
+    <div class="gadget">
+      <h2><span>Archiwum</span></h2>
+      <ul class="ex_menu">
+          {% for n in news %}
+            <li>
+                <a href="{{ n.title }}">{{ n.title }}</a><br/>
+                {{ n.date }}
+            </li>
+          {% endfor %}
+      </ul>
+    </div>
+</div>
 
 {% endblock %}

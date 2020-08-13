@@ -1,10 +1,13 @@
 import json
+import os
 import sys
 
 from staticjinja import Site
 
+
 if __name__ == "__main__":
-    news_context = json.loads(open('contents/news.json').read())
+    news_file_path = os.path.join(os.path.dirname(__file__), 'contents/news.json')
+    news_context = json.loads(open(news_file_path).read())
     news_context = sorted(news_context, key=lambda x: x.get('date'))
     context = {
         'news': news_context

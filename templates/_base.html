@@ -3,6 +3,8 @@
 <head>
 <title>SM Motywacja</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -16,14 +18,15 @@
       <div class="menu_nav">
         <ul>
           <li {% if page_name == 'main' %} class="active"{% endif %} style="min-width: 180px;"><a href="index.html"><span>Strona główna</span></a></li>
-          <li style="min-width: 150px;"><a href="{{ documents_url }}"><span>Do pobrania</span></a></li>
+          <li style="min-width: 150px;"><a href="https://drive.google.com/drive/folders/18o1mEEGbmyPMP8zblDLM5AHn3n2ff6uV?usp=sharing"><span>Do pobrania</span></a></li>
           <li {% if page_name == 'about' %} class="active"{% endif %} style="min-width: 100px;"><a href="about.html"><span>O nas</span></a></li>
           <li {% if page_name == 'contact' %} class="active"{% endif %} style="min-width: 120px;"><a href="contact.html"><span>Kontakt</span></a></li>
         </ul>
       </div>
 
       <div class="logo">
-        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+{#            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>#}
+            <div class="logo-alt">Motywacja</div>
       </div>
 
       <div class="slider">
@@ -61,7 +64,7 @@
                     Zadzwoń
                 </div>
                 <div class="value">
-                    123 123 123
+                    <a href="tel:{{ footer.tel }}">{{ footer.tel }}</a>
                 </div>
             </div>
             <div>
@@ -69,7 +72,7 @@
                     Napisz
                 </div>
                 <div class="value">
-                    sdadfgsd@email.com
+                    <a href="mailto:{{ footer.email }}">{{ footer.email }}</a>
                 </div>
             </div>
         </div>

@@ -10,11 +10,11 @@
     <div class="searchform">
     </div>
     <div class="gadget">
-      <h2><span>Archiwum</span></h2>
+      <h2>Archiwum</h2>
       <ul class="ex_menu">
           {% for n in news %}
             <li>
-                <a href="{{ n.title }}">{{ n.title }}</a><br/>
+                <span class="newsLink" target="{{ n.title }}_{{ n.date }}">{{ n.title }}</span><br/>
                 {{ n.date }}
             </li>
           {% endfor %}

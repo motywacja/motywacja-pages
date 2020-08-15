@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "title": "Adres:",
+      "text_lines": [
+        "pierwsza linia tekstu",
+        "druga linia tekstu",
+        "trzecia linia tekstu",
+        "czwarta linia tekstu"
+      ]
+    },
+    {
+      "title": "Godziny pracy:",
+      "text_lines": [
+        "pierwsza linia tekstu",
+        "druga linia tekstu",
+        "trzecia linia tekstu",
+        "czwarta linia tekstu"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "name": "osoba1",
+      "tel": "123456789",
+      "email": "abc@email.com"
+    },
+    {
+      "name": "osoba2",
+      "tel": "123456789",
+      "email": "abc@email.com"
+    }
+  ]
+}

@@ -420,3 +420,7 @@ ol li .send {
 	padding-left: 40px;
 	border-left: solid 1px lightgray;
 }
+
+.newsLink {
+	cursor: pointer;
+}
